@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .outer {
+        width: auto;
+        display: flex;
+      }
+      .outer .left {
+        width: 200px;
+        background-color: aqua;
+      }
+      .outer .center {
+        flex: 1;
+        background-color: aquamarine;
+      }
+      .outer .right {
+        width: 200px;
+        background-color: aqua;
+      } */
+
+      /* 圣杯布局 */
+      .outer {
+        width: auto;
+      }
+      .center {
+        position: relative;
+        float: left;
+        width: 100%;
+      }
+      .left {
+        position: relative;
+        float: left;
+        width: 100px;
+        left: -100px;
+        margin-left: -100%;
+        background-color: aqua;
+      }
+      .right {
+        position: relative;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="left">1</div>
+      <div class="center">2</div>
+      <div class="right">3</div>
+    </div>
+  </body>
+</html>
