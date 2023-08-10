@@ -50,3 +50,4 @@ Function.prototype.myBind = function (context = window, ...args) {
   fBound.prototype = Object.create(this.prototype);
   return fBound;
 };
+
